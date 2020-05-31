@@ -22,7 +22,7 @@ sub get_currencies {
         $error = @$;
     };
     return ($error, undef) if defined $error;
- 
+
     my @rows = $dom->find("table.tableStyle2 tr")->map(
         sub {
             my ($el) = @_;
