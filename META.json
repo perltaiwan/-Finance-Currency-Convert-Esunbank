@@ -23,12 +23,22 @@
          "requires" : {
             "App::ModuleBuildTiny" : "0.027"
          }
+      },
+      "runtime" : {
+         "requires" : {
+            "Mojolicious" : "0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test2::Harness" : "0"
+         }
       }
    },
    "provides" : {
       "Finance::Currency::Convert::Esunbank" : {
          "file" : "lib/Finance/Currency/Convert/Esunbank.pm",
-         "version" : "v0.1.0"
+         "version" : "v0.1.1"
       }
    },
    "release_status" : "stable",
@@ -42,7 +52,7 @@
          "web" : "https://github.com/perltaiwan/Finance-Currency-Convert-Esunbank"
       }
    },
-   "version" : "v0.1.0",
+   "version" : "v0.1.1",
    "x_serialization_backend" : "JSON::PP version 2.97001",
    "x_spdx_expression" : "MIT",
    "x_static_install" : "1"

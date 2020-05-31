@@ -2,15 +2,13 @@ package Finance::Currency::Convert::Esunbank;
 use strict;
 use warnings;
 
-our $VERSION = v0.1.0;
+our $VERSION = v0.1.1;
 
 use Exporter 'import';
 our @EXPORT_OK = qw(get_currencies convert_currency);
 
 use POSIX qw(strftime);
-use Mojo::Collection;
 use Mojo::UserAgent;
-use Mojo::JSON qw(encode_json);
 
 sub get_currencies {
     my ($error, $result);
@@ -84,7 +82,7 @@ Finance::Currency::Convert::Esunbank - Query currency exchange rates from Esunba
 
 =head1 VERSION
 
-v0.1.0
+v0.1.1
 
 =head1 DESCRIPTION
 
